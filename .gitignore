@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: if using VSCode
+.vscode/
+
+# Build files (if you compile code)
+dist/
+build/
+
+# Coverage reports (e.g. from Jest)
+coverage/
+
+# MongoDB dump files (optional)
+dump/
+
+# PM2 logs (optional)
+pids
+*.pid
+*.seed
+
+# Local development files
+*.local
