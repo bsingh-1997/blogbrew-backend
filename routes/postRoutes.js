@@ -211,7 +211,7 @@ router.get('/', async (req, res) => {
 // Route to get a single post by ID (publicly accessible)
 router.get('/:id', async (req, res) => {
   try {
-    const post = await Post.findById(req.params.id).populate('comments.user', 'name email image');
+    const post = await Post.findById(req.params.id).populate('user', 'name image').populate('comments.user', 'name email image');
     if (!post) {
       return res.status(404).json({ message: 'Post not found' });
     }
